@@ -1,16 +1,16 @@
 :root {
   --pastel-pink: #ffd6d9;
-  --pastel-blue: #c8e7ff;
+  --pastel-blue: #22ee2c;
   --pastel-green: #d6ffd6;
-  --pastel-yellow: #fff8c8;
+  --pastel-yellow: #e3c817;
   --text-color: #333;
-  --bg-color: #fff;
+  --bg-color: #e74848;
   --accent: #a3bffa;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #eee;
+    --text-color: #c93131;
     --bg-color: #1c1c1c;
   }
 }
@@ -26,7 +26,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background 0.4s, color 0.4s;
+  transition:  0.4s, color 0.4s;
 }
 
 .navbar {
@@ -85,7 +85,7 @@ body {
 
 .btn {
   background: var(--accent);
-  color: white;
+  color: rgb(238, 35, 35);
   padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 25px;
