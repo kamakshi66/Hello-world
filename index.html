@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Employee Database Management System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="app">
-        <header class="header">
-            <h1>Employee Database Management</h1>
-            <button class="createEmployee">
-                Add Employee
-            </button>
-        </header>
-        <div class="employees">
-            <div class="employees__names">
-                <span class="employees__names--title">
-                      Employee List
-                  </span>
-                <div class="employees__names--list"></div>
-            </div>
-            <div class="employees__single">
-                <div class="employees__single--title">
-                    Employee Information
-                </div>
-                <div class="employees__single--info"></div>
-            </div>
-        </div>
-        <!-- Add Employee Code - START -->
-        <div class="addEmployee">
-            <form class="addEmployee_create">
-                Add a new Employee
-                <div>
-                    <input type="text" name="firstName" 
-                           placeholder="First Name" required />
-                    <input type="text" name="lastName" 
-                           placeholder="Last Name" required />
-                </div>
-                <input type="text" name="imageUrl" 
-                       placeholder="Image URL (Optional)" />
-                <input type="email" name="email" 
-                       placeholder="Email" required />
-                <input type="number" name="contactNumber" 
-                       placeholder="Contact" required />
-                <input type="number" name="salary" 
-                       placeholder="Salary" required />
-                <input type="text" name="address" 
-                       placeholder="Address" required />
-                <input type="date" name="dob" 
-                       placeholder="Date of Birth" 
-                       class="addEmployee_create--dob" 
-                       required />
-                <input type="submit" 
-                       class="addEmployee_create--submit" 
-                       value="Submit" />
-            </form>
-        </div>
-        <!-- Add Employee Code - END -->
+  <header class="navbar">
+    <h1 class="logo">MyPortfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="content">
+      <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+      <h3>A Frontend Developer</h3>
+      <p>I build beautiful, responsive, and user-friendly web experiences.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate frontend developer who loves crafting interactive, pastel-themed interfaces with clean code and smooth animations.
+    </p>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Tailwind</div>
+      <div class="skill-card">Git</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A sleek personal portfolio built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>UI Components</h3>
+        <p>Reusable frontend UI components with pastel styling.</p>
+      </div>
+      <div class="project-card">
+        <h3>Responsive Landing Page</h3>
+        <p>A modern landing page optimized for all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Let's work together! Drop me a message below 👇</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
